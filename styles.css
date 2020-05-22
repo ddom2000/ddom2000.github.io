@@ -1,0 +1,162 @@
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#81d4fa;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 0px 0px;
+  border: 1px solid #ccc;
+  border-top: none;
+  flex-direction: row;
+  width: 100%;
+}
+
+body {
+  background-color: #e1f5fe;
+  margin:  0px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin: 0px;
+}
+h2{
+  color:black;
+}
+h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+.cim {
+  background-color: #01579b;
+  margin:  0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#profilkep {
+  max-width:  50%;
+  max-height: 50%;
+}
+#profilkep img {
+   height: 100%;
+   width: 100%;
+}
+#bemutatkozasszoveg{
+  width: 50%;
+  padding: 40px;
+  font-size: 20px;
+  text-align:center;
+}
+#bemutatkozastartalom{
+  display:flex;
+}
+#hobbikepek1 {
+  max-width:  100%;
+  max-height: 30%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+}
+#hobbikepek1 img {
+   height: 100%;
+   width: 30%;
+}
+#hobbikepek2 {
+  max-width:  100%;
+  max-height: 30%;
+  display: flex;
+  flex-direction: row;
+}
+#hobbikepek2 img {
+   height: 100%;
+   width: 30%;
+ }
+ #hobbikepek3 {
+   max-width:  100%;
+   max-height: 30%;
+   display: flex;
+   flex-direction: row;
+ }
+ #hobbikepek3 img {
+    height: 100%;
+    width: 40%;
+  }
+  #hobbikepek4 {
+    max-width:  100%;
+    max-height: 30%;
+    display: flex;
+    flex-direction: row;
+  }
+  #hobbikepek4 img {
+     height: 100%;
+     width: 40%;
+   }
+#hobbiszoveg1{
+  padding:40px;
+}
+#hobbiszoveg2{
+  padding:40px;
+}
+#hobbiszoveg3{
+  padding:40px;
+}
+#hobbiszoveg4{
+  padding:40px;
+}
+#hobbitartalom{
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+}
+#projektkepek {
+  max-width:  100%;
+  max-height: 30%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+}
+#projektkepek img {
+   height: 100%;
+   width: 30%;
+}
+#projektszoveg{
+  padding:40px;
+}
+#projekttartalom{
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+}
+#kapcsolattartalom{
+  padding:40px;
+  font-size: 20px;
+  text-align: center;
+}

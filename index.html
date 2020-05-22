@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dominguez Dávid portfólió</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+<body>
+	<div class="cim">
+		<h1>Dominguez Dávid Portfólió</h1>
+	</div>
+
+	<div class="tab">
+		<button class="tablinks" onclick="nyit('Bemutatkozas')">Bemutatkozás</button>
+		<button class="tablinks" onclick="nyit('Hobbik')">Hobbik</button>
+		<button class="tablinks" onclick="nyit('Projektek')">Projektek</button>
+		<button class="tablinks" onclick="nyit('Kapcsolat')">Kapcsolat</button>
+	</div>
+
+	<div id="Bemutatkozas" class="tabcontent">
+		<div id="bemutatkozastartalom">
+
+		<div id="bemutatkozasszoveg">
+			<h2>Bemutatkozás</h2>
+			<p>Dominguez Dávidnak hívnak.</p>
+			<p>20 éves vagyok, Miskolcon születtem, Dunaharasztiban élek.</p>
+			<p>A Budapesti Műszaki és Gazdaságitudományi Egyetem elsőéves alapszakos gépészmérnöki karának hallgatója vagyok.</p>
+			<p>Már gyermekkoromban is megmutatkozott a műszaki világ iránti érdeklődésem.</p>
+			<p>Hobbiként is szívesen foglalkozom a gépek  működésével.</p>
+		</div>
+		<div id="profilkep">
+			<img src="kepek/dd.jpg"></img>
+		</div>
+		</div>
+	</div>
+
+	<div id="Hobbik" class="tabcontent">
+		<div id="hobbitartalom">
+
+		<div id="hobbiszoveg1">
+			<h3>Hobbik</h3>
+			<h2>Utazás</h2>
+			<p>Az évek során sokat utaztunk a családdal, szívesen ismerkedek más országok kultúrájával, szokásaival, ételeivel. A meglátogatott helyek közül ezek a legkedvesebbek.</p>
+		</div>
+		<div id="hobbikepek1">
+			<img src="kepek/orca1.jpeg"></img>
+			<img src="kepek/orca2.jpeg"></img>
+			<img src="kepek/hotel1.jpeg"></img>
+			<img src="kepek/hotel2.jpeg"></img>
+		</div>
+		<div id="hobbiszoveg2">
+			<h2>Barkácsolás</h2>
+			<p>A fa szépsége is megigézett, szeretem a gyalult fa simasáságát, erezetét.</p>
+		</div>
+		<div id="hobbikepek2">
+			<img src="kepek/barkacs2.jpg"></img>
+		</div>
+		<div id="hobbiszoveg3">
+			<h2>Kertészkedés</h2>
+			<p>A természet mindig is közel állt hozzám, imádom a növények illatát. Ezt a magaságyást pár éve álmodtam meg és sikerült is terveim szerint megvalósitani.</p>
+		</div>
+		<div id="hobbikepek3">
+			<img src="kepek/kert.jpg"></img>
+		</div>
+		<div id="hobbiszoveg4">
+			<h2>Kosárlabda</h2>
+			<p>Mivel az egész családom elkötelezett a kosárlabda iránt, ezért én is megszerettem ezt a sportot, kisiskolás koromtól rendszeresen játszom is. </p>
+		</div>
+		<div id="hobbikepek4">
+			<img src="kepek/kosar.jpg"></img>
+		</div>
+		</div>
+	</div>
+
+	<div id="Projektek" class="tabcontent">
+		<div id="projekttartalom">
+
+		<div id="projektszoveg">
+			<h2>Projektek</h2>
+			<p>Az alábbi projektjeimre különösen büszke vagyok. Az első két képen még a gimnazista éveim munkája, egy medence gépháza látható. Ekkor köteleztem el magam a gépészmérnöki pálya iránt.
+			A többi képen a tavalyi munkám eredménye látható. A képek alapján egyértelműen látható, hogy pár év alatt is mennyit fejlődtem.</p>
+		</div>
+		<div id="projektkepek">
+			<img src="kepek/gephaz1.jpg"></img>
+			<img src="kepek/gephaz2.jpg"></img>
+			<img src="kepek/gephaz4.jpg"></img>
+			<img src="kepek/gephaz5.jpg"></img>
+			<img src="kepek/gephaz6.jpg"></img>
+			<img src="kepek/gephaz7.jpg"></img>
+		</div>
+		</div>
+	</div>
+	<div id="Kapcsolat" class="tabcontent">
+		<div id="kapcsolattartalom">
+			<h3>Kapcsolat</h3>
+			<p>Ha a portfóliómmal kapcsolatban kérdésed van vagy bármiben tudok segíteni, nyugodtan vedd fel velem a kapcsolatot ezen az e-mailen:</p>
+			<p>ddom2000@gmail.com</p>
+		</div>
+	</div>
+</body>
+<script>
+	window.onload = function() {
+  nyit("Bemutatkozas");
+	};
+
+	function nyit( kivalasztott) {
+		var i, tabcontent, tablinks;
+
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(kivalasztott).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+
+</html>
